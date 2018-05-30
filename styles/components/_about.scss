@@ -1,0 +1,24 @@
+.about {
+  background:  linear-gradient(to bottom, rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0.3)), url(../assets/by-annie-spratt.jpg) ;
+  // background-image: url(../assets/by-annie-spratt.jpg);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: top right;
+  .wrapper {
+    position: relative;
+  }
+  img {
+
+    width: 50%;
+  }
+
+  &__content {
+    padding: 25% 0;
+    background-color: $white;
+    width: 60%;
+    transform: skewX(-30deg);
+    > * {
+      transform: skewX(30deg);
+    }
+  }
+}

@@ -1,0 +1,70 @@
+header {
+  // background-color: salmon;
+  // padding: 1px;
+  padding-bottom: 150px;
+  background-image: url(../assets/header-background.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  // height: 80vh;
+  color: $white;
+
+
+  .wrapper {
+      width: 60%;
+      max-width: 1170px;
+      margin: auto;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    ul {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      a {
+        padding: 25px;
+        @include type(1.4, $white, 600, 1, left, true);
+      }
+    }
+
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    &__img-wrap {
+      width: 25%;
+      margin-left: 10%;
+      margin-right: auto;
+      img {
+        border-radius: 50%;
+      }
+    }
+
+  }
+  .logo {
+
+    margin-left: auto;
+    @include type(2.7, $white, 200, 1.2, left, true)
+    span {
+      font-weight: 600;
+    }
+
+  }
+  h1 {
+    @include type(5,$white, 600, 1.2, left, true);
+    margin-left: 10%;
+
+    span {
+      display: block;
+      color: accent2;
+      @include type(5,$accent2, 200, 1.2, left, true);
+    }
+  }
+
+  .button1 {
+    margin-top: 13%;
+  }
+}
