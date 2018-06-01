@@ -1,24 +1,53 @@
 .about {
-  background:  linear-gradient(to bottom, rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0.3)), url(../assets/by-annie-spratt.jpg) ;
-  // background-image: url(../assets/by-annie-spratt.jpg);
+  // background:  linear-gradient(to bottom, rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0.3)), url(../assets/by-annie-spratt.jpg); ;
+  background:  linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.3)),
+    url(../assets/by-annie-spratt.jpg);
+
   background-repeat: no-repeat;
-  background-size: 60%;
+  background-size: auto 100%;
+
   background-position: top right;
+  position: relative;
   .wrapper {
     position: relative;
+    // border: 2px solid red;
   }
+
+
+
   img {
 
     width: 50%;
   }
+  &__skew {
+    position: absolute;
+    top: 0;
 
-  &__content {
-    padding: 25% 0;
+    //Will this cause the phone display to go nuts?
+    // Maybe change it for mobile.
+    left: -100%;
+    bottom: 0;
+    z-index: 10;
+    transform: skewX(-28deg);
     background-color: $white;
-    width: 60%;
-    transform: skewX(-30deg);
-    > * {
-      transform: skewX(30deg);
-    }
+    width: 155%;
+
+
+
   }
+  &__content {
+    // border: 1px solid blue;
+      // transform: skewX(28deg);
+      position: relative;
+      z-index: 20;
+      padding: 20% 0;
+      p {
+        width: 50%;
+      }
+  }
+
+
 }

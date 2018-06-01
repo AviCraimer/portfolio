@@ -47,7 +47,8 @@ header {
   .logo {
 
     margin-left: auto;
-    @include type(2.7, $white, 200, 1.2, left, true)
+    @include type(2.7, $white, 200, 1.2, left, true);
+
     span {
       font-weight: 600;
     }

@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,600|Source+Sans+Pro:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,600,700|Source+Sans+Pro:400,700" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles/style.css">
   <title>Avi Craimer | Web Developer</title>
 </head>
@@ -15,7 +15,7 @@
   <header>
     <div class="wrapper">
       <nav class="main-nav">
-        <h2 class="logo">A<span>C</span></h2>
+        <h3 class="logo">A<span>C</span></h2>
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -34,19 +34,182 @@
   </header>
   <main>
     <section class="about" id="about">
-      <div class="wrapper">
-        <div class="about__content">
-          <h2>About Me</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis atque eos sint, esse fuga odio quisquam omnis suscipit! Eius impedit eaque, debitis quia perspiciatis non consectetur sequi eligendi fuga eveniet?</p>
-        </div>
-        <!-- End of About Content -->
+      <div class="about__skew">
       </div>
-      <!-- <img src="assets/by-annie-spratt.jpg" alt="Computers and desks in a tech company office"> -->
-      <!-- End of Wrapper -->
+      <div class="wrapper">
+          <div class="about__content">
+            <h2 class="accent-line"  >About Me</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis atque eos sint, esse fuga odio quisquam omnis suscipit! Eius impedit eaque, debitis quia perspiciatis non consectetur sequi eligendi fuga eveniet?</p>
+          </div> <!-- End of About Content -->
+      </div> <!-- End of Wrapper -->
+
+
+
+
+
 
     </section>
-  </main>
+    <section class="skills wrapper" >
 
+      <ul class="skills__grid">
+        <li class="skills__header-content">
+            <h2>Skills and Tooling</h2>
+            <p>I relish the challenge of continually adding the latest technologies to my development toolkit while also mastering programming fundamentals.</p>
+        </li>
+        <li class="skills__card featured ">
+          <i class="fab fa-html5"></i>
+          <h4>HTML</h4>
+          <p>Clean accessible and semantic markup. Using Emmet to build page structure rapidly.</p>
+        </li>
+        <li class="skills__card featured ">
+          <i class="fab fa-css3-alt"></i>
+          <h4>CSS</h4>
+          <p>Responsive web layout and styling with descriptive class names and minimal repetition.</p>
+        </li>
+        <li class="skills__card featured ">
+          <i class="fab fa-js"></i>
+          <h4>JavaScript</h4>
+          <p>Writing concise maintainable code with ES6 syntax, functional programming techniques and articulate comments.</p>
+        </li>
+        <li class="skills__card featured ">
+            <img src="assets/jquery.svg" alt="jQuery Icon" aria-hidden="true" >
+            <h4>jQuery</h4>
+            <p>Going beyond plugins to craft unqiue interactive page elements and data rich websites</p>
+          </li>
+        <li class="skills__card featured ">
+          <i class="fab fa-react"></i>
+          <h4>React</h4>
+          <p>Authoring full-featured React web apps with Firebase for authentication and persistent data.</p>
+        </li>
+        <li class="skills__card featured ">
+          <img src="assets/svg-icon.svg" alt="SVG Format Icon" aria-hidden="true" >
+          <h4>SVG</h4>
+          <p>Creating, optimizing, and manipulating SVG images for lightweight super-crisp backgrounds and fun interactive animations.</p>
+        </li>
+        <!-- <li class="skills__header-content">
+            <h2>Tooling</h2>
+        </li> -->
+        <li class="skills__card">
+            <img src="assets/firebase.svg" alt="Firebase Icon" aria-hidden="true" >
+          <h4>Firebase</h4>
+        </li>
+        <li class="skills__card">
+          <i class="fab fa-sass"></i>
+          <h4>SASS</h4>
+        </li>
+        <li class="skills__card">
+            <img src="assets/affinity-designer.svg" alt="Affinity Designer Icon">
+            <h4>Affinity Designer</h4>
+          </li>
+        <li class="skills__card">
+          <img src="assets/vs-code.svg" alt="VS Code Icon">
+          <h4>VS Code</h4>
+        </li>
+
+        <li class="skills__card">
+            <i class="fab fa-gulp"></i>
+          <h4>Gulp</h4>
+        </li>
+        <li class="skills__card">
+            <i class="fab fa-github-square"></i>
+          <h4>GitHub</h4>
+        </li>
+      </ul> <!-- End of skills__grid -->
+    </section>
+
+    <!-- Start of Portfolio Section and First Project -->
+    <section class="portfolio portfolio1 clearfix">
+      <div class="background">
+        <div class="background__top"></div>
+        <div class="background__skew-bottom"></div>
+      </div>
+      <div class="wrapper portfolio__header">
+          <h2 class="accent-line">Portfolio</h2>
+      </div>
+      <div class="portfolio__project  wrapper-right">
+        <div class="portfolio__project__content">
+          <h3>Library Events Page</h3>
+          <h4>React-Firebase Web App</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, labore velit vitae nobis repellendus, pariatur ex possimus fugit autem vero magnam iusto officia repudiandae soluta. Saepe quas eaque eius id!</p>
+        </div>
+        <div class="portfolio__project__screenshot">
+          <a href="https://library-events-project6.firebaseapp.com" target="_blank" >
+            <img src="assets/library-events.png" alt="The Library Events web app page displayed on a laptop">
+          </a>
+        </div>
+
+      </div>
+    </section>
+    <!-- SECOND PROJECT -->
+    <section class="portfolio portfolio2 clearfix">
+      <div class="background">
+        <div class="background__skew-top"></div>
+        <div class="background__bottom"></div>
+      </div>
+
+      <div class="portfolio__project  wrapper-left">
+        <div class="portfolio__project__screenshot">
+          <a href="https://library-events-project6.firebaseapp.com" target="_blank" >
+            <img src="assets/library-events.png" alt="The Library Events web app page displayed on a laptop">
+          </a>
+        </div>
+        <div class="portfolio__project__content">
+          <h3>My Meditation Builder</h3>
+          <h4>React-Firebase Web App</h4>
+
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, labore velit vitae nobis repellendus, pariatur ex possimus fugit autem vero magnam iusto officia repudiandae soluta. Saepe quas eaque eius id!</p>
+        </div>
+
+      </div>
+    </section>
+    <!-- THIRD PROJECT -->
+    <section class="portfolio portfolio3 clearfix">
+      <div class="background">
+        <div class="background__top"></div>
+        <div class="background__skew-bottom"></div>
+      </div>
+      <div class="portfolio__project  wrapper-right">
+        <div class="portfolio__project__content">
+          <h3>Junior Ghost Catchers</h3>
+          <h4>Javascript App with jQuery and jQueryUI</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, labore velit vitae nobis repellendus, pariatur ex possimus fugit autem vero magnam iusto officia repudiandae soluta. Saepe quas eaque eius id!</p>
+        </div>
+        <div class="portfolio__project__screenshot">
+          <a href="https://library-events-project6.firebaseapp.com" target="_blank" >
+            <img src="assets/library-events.png" alt="The Library Events web app page displayed on a laptop">
+          </a>
+        </div>
+
+      </div>
+    </section>
+    <aside class="fun">
+      <h2>Coding Fun</h2>
+      <div class="fun__content wrapper">
+        <div class="fun__card">
+          <img src="" alt="">
+          <h4>Project Euler</h4>
+          <p><span class="big-number">13</span> Problems Solved</p>
+        </div>
+        <div class="fun__card">
+          <img src="" alt="">
+          <h4>Codewars</h4>
+          <p><span class="big-number">203</span> Kata Completed</p>
+        </div>
+        <div class="fun__card">
+          <img src="" alt="">
+          <h4>CodePen</h4>
+          <p><span class="big-number">10</span> Experiments Bubbling</p>
+        </div>
+      </div>
+
+    </aside>
+
+
+  </main>
+  <footer>
+
+
+  </footer>
 
 
   <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>

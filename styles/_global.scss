@@ -18,9 +18,28 @@ a, h1, h2, h3, h4, h5, h6, button   {
   color: $black;
 }
 
+
+h2 {
+  @include type (3.6, $black, 700, 1.5, left, true);
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+h3 { //Section Main Sub Headings
+  @include type (3.2, $black, 600, 1.5, left, true);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 a {
   text-decoration: none;
   color: $white;
+}
+
+p {
+  @include type (2.4, $black, 300, 1.54, left, false);
+  letter-spacing: 0.06rem;
 }
 
 img {
@@ -31,6 +50,16 @@ img {
   width: 60%;
   max-width: 1170px;
   margin: auto;
+}
+
+.wrapper-right {
+  width: 80%;
+  float: right;
+}
+
+.wrapper-left {
+  width: 80%;
+
 }
 
 ul {
@@ -46,8 +75,26 @@ ul {
   box-shadow: 0px 12px 40px 0px rgba(231, 255, 137, 0.3);
   padding: 15px 30px;
   border-radius: 100px;
-  i {
-    padding-left: 10px;
+  svg {
+    margin-left: 15px;
   }
 
+}
+
+
+.accent-line { //This is attached to the H2 tag
+
+  margin-bottom: 100px;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 100px;
+    border-bottom:  2px solid $accent2;
+
+    position: absolute;
+    bottom: -29px;
+    left: 0;
+
+  }
 }
