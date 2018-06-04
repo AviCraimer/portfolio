@@ -46,11 +46,19 @@ header {
   }
   .logo {
 
-    margin-left: auto;
-    @include type(2.7, $white, 200, 1.2, left, true);
+    // margin-left: auto;
+    @include type(5, $white, 200, 1.2, left, true);
+    span.a {
+      position: relative;
+      z-index: 10;
+    }
 
-    span {
+    span.c {
       font-weight: 600;
+      color: $accent2;
+      z-index: 0;
+      position: relative;
+      left: -20%;
     }
 
   }

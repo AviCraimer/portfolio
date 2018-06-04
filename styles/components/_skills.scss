@@ -6,6 +6,10 @@
   position: relative;
   z-index: 10;
 
+  @media (max-width: 750px) {
+    padding: 50px;
+  }
+
   &::before { //Yellow accent line
     content: '';
     border-bottom: 2px solid $accent1;
@@ -28,6 +32,12 @@
     grid-template-columns: 1fr   1fr  1fr;
     grid-gap: 100px;
 
+    @media (max-width: 950px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 750px) {
+      grid-gap: 50px;
+    }
   }
 
   &__header-content { //Header content is child of grid
@@ -73,6 +83,13 @@
         transform: scale(1.5);
       }
     }
+
+
   }//end of skills card
+
+
+
+
+
 
 }

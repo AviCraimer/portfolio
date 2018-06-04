@@ -1,0 +1,43 @@
+.contact {
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.2);
+
+  padding: 100px;
+  margin: -38px auto 0 auto ;
+  position: relative;
+  z-index: 30;
+  background: $white;
+
+  h2 {
+    margin-top: 0;
+  }
+
+  form {
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  input[type=text] {
+    margin-right: 30px;
+  }
+
+  input[type=text], input[type=email], textarea {
+    flex: 1 1 40%;
+    @include type(1.6, #838282, 400, 1.6, left, false );
+    border: none;
+    border-bottom: 1px solid #b9b9b9;
+    margin-bottom: 30px;
+    padding: 10px;
+  }
+
+  textarea {
+    flex: 1 1 100%;
+    border: 1px solid #b9b9b9;
+  }
+
+  input[type=submit] {
+    border: none;
+    margin: 0 auto;
+  }
+
+}

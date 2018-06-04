@@ -15,7 +15,7 @@
   <header>
     <div class="wrapper">
       <nav class="main-nav">
-        <h3 class="logo">A<span>C</span></h2>
+        <h3 class="logo"><span class="a">A</span><span class="c">C</span></h2>
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -39,7 +39,9 @@
       <div class="wrapper">
           <div class="about__content">
             <h2 class="accent-line"  >About Me</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis atque eos sint, esse fuga odio quisquam omnis suscipit! Eius impedit eaque, debitis quia perspiciatis non consectetur sequi eligendi fuga eveniet?</p>
+            <p>As a coder I strive to bring together analyic thinking with holistic vision. As I learned JavaScript, I drew on my academic training in formal logic and conceptual analysis. In addition, my background in mindfulness meditation helps me to stay focused, relaxed and attentive as I code.</p>
+            <p>I am delighted to be a graduate from the HackerYou full-time Web Dev program, and I can't wait to share my skills and enthusiam as part of an inspiring development team.</p>
+
           </div> <!-- End of About Content -->
       </div> <!-- End of Wrapper -->
 
@@ -123,14 +125,16 @@
         <div class="background__top"></div>
         <div class="background__skew-bottom"></div>
       </div>
-      <div class="wrapper portfolio__header">
+      <div class="wrapper-right portfolio__header">
           <h2 class="accent-line">Portfolio</h2>
       </div>
       <div class="portfolio__project  wrapper-right">
         <div class="portfolio__project__content">
-          <h3>Library Events Page</h3>
-          <h4>React-Firebase Web App</h4>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, labore velit vitae nobis repellendus, pariatur ex possimus fugit autem vero magnam iusto officia repudiandae soluta. Saepe quas eaque eius id!</p>
+          <h3><a href="https://library-events-project6.firebaseapp.com" target="_blank" >Library Events Page</a></h3>
+          <h4><a href="https://library-events-project6.firebaseapp.com" target="_blank" >React-Firebase Web App</a></h4>
+          <p>A site to allow Torontonians to browse public library events and save them to a user profile. The TPL has an event data API with no search options, so I wrote my own functions to filter and sort the data. We used geolocation to find events near the user, and users can add events to their Google calendar. Firebase stores a user's saved events and speeds up the site's loading time by caching upcoming events from previous site visits.</p>
+          <a href="https://library-events-project6.firebaseapp.com" class="button2" target="_blank">Visit Site</a>
+          <a href="https://github.com/AviCraimer/library-project" class="button2 button2--last " target="_blank">Source Code</a>
         </div>
         <div class="portfolio__project__screenshot">
           <a href="https://library-events-project6.firebaseapp.com" target="_blank" >
@@ -149,15 +153,17 @@
 
       <div class="portfolio__project  wrapper-left">
         <div class="portfolio__project__screenshot">
-          <a href="https://library-events-project6.firebaseapp.com" target="_blank" >
-            <img src="assets/library-events.png" alt="The Library Events web app page displayed on a laptop">
+          <a href="https://my-meditation-builder.firebaseapp.com" target="_blank" >
+            <img src="assets/my-meditation-builder.png" alt="The My Meditation Builder App Displayed on a smartphone">
           </a>
         </div>
         <div class="portfolio__project__content">
-          <h3>My Meditation Builder</h3>
-          <h4>React-Firebase Web App</h4>
+          <h3> <a href="https://my-meditation-builder.firebaseapp.com" target="_blank" >My Meditation Builder</a></h3>
+          <h4><a href="https://my-meditation-builder.firebaseapp.com" target="_blank" >React-Firebase Web App</a></h4>
 
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, labore velit vitae nobis repellendus, pariatur ex possimus fugit autem vero magnam iusto officia repudiandae soluta. Saepe quas eaque eius id!</p>
+          <p>As a meditation teacher I've been watching with interest the rise of mindfulness apps. This site is a prototype for a meditation app that would allow users to build custom guided audio meditations. It uses React to dynamically render the page as the user makes choices about their meditation. Firebase is used for user authentication and to save user created meditations.</p>
+          <a href="https://my-meditation-builder.firebaseapp.com" class="button2" target="_blank">Visit Site</a>
+          <a href="https://github.com/AviCraimer/myMeditationBuilder" class="button2 button2--last " target="_blank">Source Code</a>
         </div>
 
       </div>
@@ -170,13 +176,16 @@
       </div>
       <div class="portfolio__project  wrapper-right">
         <div class="portfolio__project__content">
-          <h3>Junior Ghost Catchers</h3>
-          <h4>Javascript App with jQuery and jQueryUI</h4>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, labore velit vitae nobis repellendus, pariatur ex possimus fugit autem vero magnam iusto officia repudiandae soluta. Saepe quas eaque eius id!</p>
+          <h3><a href="http://www.avicodes.com/ghostcatchers" target="_blank" >Junior Ghost Catchers</a></h3>
+          <h4> <a href="http://www.avicodes.com/ghostcatchers" target="_blank" >Javascript-jQuery Web App</a></h4>
+          <p>Drawing on my experience as a math tutor for elementary and middle school students, I designed this game to teach basic algebra concepts in a colourful interacive way. I used jQueryUI for drag and drop functionality and SVG images customized in Affinity Designer for the graphics.</p>
+          <a href="http://www.avicodes.com/ghostcatchers" class="button2" target="_blank">Visit Site</a>
+          <a href="https://github.com/AviCraimer/ghostcatchers" class="button2" target="_blank">Source Code</a>
+
         </div>
         <div class="portfolio__project__screenshot">
-          <a href="https://library-events-project6.firebaseapp.com" target="_blank" >
-            <img src="assets/library-events.png" alt="The Library Events web app page displayed on a laptop">
+          <a href="http://www.avicodes.com/ghostcatchers" target="_blank" >
+            <img src="assets/ghostcatchers.png" alt="Junior Ghost Catchers Game displayed on a tablet">
           </a>
         </div>
 
@@ -185,34 +194,83 @@
     <aside class="fun">
       <h2>Coding Fun</h2>
       <div class="fun__content wrapper">
-        <div class="fun__card">
-          <img src="" alt="">
-          <h4>Project Euler</h4>
-          <p><span class="big-number">13</span> Problems Solved</p>
-        </div>
-        <div class="fun__card">
-          <img src="" alt="">
-          <h4>Codewars</h4>
-          <p><span class="big-number">203</span> Kata Completed</p>
-        </div>
-        <div class="fun__card">
-          <img src="" alt="">
+        <a href="https://codepen.io/AviC/"  target="_blank"  class="fun__card codePen">
+          <!-- <img src="assets/codepen.svg" alt="CodePen Icon"> -->
+          <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"  style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+            <rect id="Artboard1" x="0" y="0" width="100" height="100" style="fill:none;"/>
+            <clipPath id="_clip1">
+                <rect id="Artboard11" serif:id="Artboard1" x="0" y="0" width="100" height="100"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <path id="codePen" d="M50,-0.601L47.837,0.841L1.683,31.731L0,32.813L0,67.188L1.683,68.269L47.837,99.159L50,100.601L52.163,99.159L98.317,68.269L100,67.188L100,32.813L98.317,31.731L52.163,0.841L50,-0.601ZM46.154,11.178L46.154,32.091L26.322,45.433L10.817,34.976L46.154,11.178ZM53.846,11.178L89.183,34.976L73.678,45.433L53.846,32.091L53.846,11.178ZM50,38.822L66.707,50L50,61.178L33.293,50L50,38.822ZM7.692,42.067L19.471,50L7.692,57.933L7.692,42.067ZM92.308,42.067L92.308,57.933L80.529,50L92.308,42.067ZM26.442,54.567L46.154,67.909L46.154,88.822L10.817,65.024L26.442,54.567ZM73.558,54.567L89.183,65.024L53.846,88.822L53.846,67.909L73.558,54.567Z" style="fill:#e7ff89;fill-rule:nonzero;"/>
+            </g>
+        </svg>
           <h4>CodePen</h4>
-          <p><span class="big-number">10</span> Experiments Bubbling</p>
-        </div>
+          <p><span class="big-number">10</span></p>
+          <p>Experiments Bubbling</p>
+        </a>
+        <a href="https://www.codewars.com/users/AviC"  target="_blank"  class="fun__card codewars">
+          <img src="assets/codewars.svg" alt="Codewars Icon">
+          <h4>Codewars</h4>
+          <p><span class="big-number">24</span></p>
+          <p>Kata Completed</p>
+        </a>
+
+        <a href="https://projecteuler.net/" target="_blank"  class="fun__card euler">
+          <svg width="100%" height="100%" viewBox="0 0 173 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+            <path d="M172.105,0.448L172.105,172.553L0,172.553L0,0.448L172.105,0.448ZM161.226,10.732L10.444,10.732L10.444,161.732L161.226,161.732L161.226,10.732Z" style="fill:#e7ff89;"/>
+            <path class="euler-p" d="M43.814,89.689L43.966,116.993L21.858,117.176L21.888,22.337C21.888,22.337 64.023,22.859 66.031,22.884C66.082,22.884 66.133,22.888 66.184,22.896C102.804,28.295 103.44,81.333 66.653,89.689L43.814,89.689ZM44.283,44.547C44.215,44.6 44.156,44.664 44.11,44.736C39.462,52.004 39.889,59.589 43.915,66.953C43.969,67.052 44.044,67.138 44.134,67.205C51.953,73.024 59.41,72.865 66.535,67.196C66.613,67.134 66.676,67.055 66.72,66.966C70.341,59.519 69.59,52.258 66.272,44.825C66.216,44.698 66.125,44.59 66.009,44.512C58.412,39.382 52,38.533 44.283,44.547Z" style="fill:#e7ff89;"/>
+            <path class="euler-e" d="M83.049,60.979L150.271,60.979L150.088,83.501L105.636,83.501L105.636,94.886L150.453,94.886L150.453,116.93L105.818,117.295L105.272,128.954L149.724,128.772L150.453,150.634L83.049,150.816L83.049,60.979Z" style="fill:#e7ff89;" />
+          </svg>
+          <h4>Project Euler</h4>
+          <p><span class="big-number">13</span></p>
+          <p>Problems Solved</p>
+        </a>
       </div>
-
     </aside>
-
+    <section class="contact wrapper">
+      <h2 class="accent-line">Contact</h2>
+      <p>I would love to hear from you. Email me directly at hello@avicodes.com or use the contact form below.</p>
+      <form action="http://www.focuspocus.io/magic/c468998d09747e09215df53ecaa3a560" method="POST">
+        <input type="text" placeholder="Your Name" name="senderName" >
+        <input type="email" placeholder="Email" name="Email" >
+        <textarea  cols="30" rows="10" placeholder="Message" name="message" ></textarea>
+        <input class="button2" type="submit" value="Send" >
+      </form>
+    </section>
 
   </main>
   <footer>
+    <div class="footer__top">
+      <div class="footer__top__skew"></div>
+    </div>
+    <div class="footer__middle">
+      <div class="footer__middle__skew"></div>
+    </div>
+    <div class="footer__bottom">
 
+    </div>
+
+
+    <div class="footer__background">
+          <div class="footer__background__top">
+            <address>
+              <p>Phone: 416-825-7496</p>
+              <p>Email: hello@avicodes.com</p>
+              <p>Website: www.avicodes.com</p>
+              <p>Toronto</p>
+            </address>
+
+          </div>
+          <div class="footer__background__middle"></div>
+          <d class="footer__background__bottom"></div>
+      </div>
 
   </footer>
 
 
   <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+  <script src='scripts/anime.min.js' ></script>
   <script src="scripts/script.js"></script>
 </body>
 

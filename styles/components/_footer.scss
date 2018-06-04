@@ -1,0 +1,27 @@
+footer {
+  //Height is for development only
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+
+
+  &__top {
+    &__skew {
+
+    }
+
+    //Yellow vertical line
+    //background: linear-gradient(0deg, #e6fe88 0%, rgba(230, 254, 136, 0) 100%);
+  }
+  &__middle {
+    &__skew {
+
+    }
+
+  }
+  &__bottom {
+
+    background: #303b42;
+  }
+
+}

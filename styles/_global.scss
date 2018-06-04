@@ -38,7 +38,7 @@ a {
 }
 
 p {
-  @include type (2.4, $black, 300, 1.54, left, false);
+  @include type (2.2, $black, 300, 1.54, left, false);
   letter-spacing: 0.06rem;
 }
 
@@ -47,18 +47,24 @@ img {
 }
 
 .wrapper {
-  width: 60%;
+  width: 65%;
   max-width: 1170px;
   margin: auto;
+  @media (max-width: 1400px) {
+    width: 75%;
+  }
+  @media (max-width: 1100px) {
+    width: 90%;
+  }
 }
 
 .wrapper-right {
-  width: 80%;
+  width: 85%;
   float: right;
 }
 
 .wrapper-left {
-  width: 80%;
+  width: 85%;
 
 }
 
@@ -72,7 +78,7 @@ ul {
   display: inline-block;
   @include type (1.7, $black, 700, 1, center, true);
   background-color:  $accent1;
-  box-shadow: 0px 12px 40px 0px rgba(231, 255, 137, 0.3);
+  box-shadow: 0px 12px 40px 0px rgba(231, 255, 137, 0.4);
   padding: 15px 30px;
   border-radius: 100px;
   svg {
@@ -81,10 +87,17 @@ ul {
 
 }
 
+.button2 {
+  @extend .button1;
+  box-shadow: 0px 12px 40px 0px rgba(72, 196, 212, 0.3);
+  background-color: $accent2;
+  color: $white;
+}
+
 
 .accent-line { //This is attached to the H2 tag
 
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 
   &::after {
     content: '';
