@@ -6,16 +6,12 @@
   position: relative;
   z-index: 10;
 
-  @media (max-width: 750px) {
-    padding: 50px;
-  }
-
   &::before { //Yellow accent line
     content: '';
-    border-bottom: 2px solid $accent1;
+    border-bottom: 3px solid $accent1;
     position: absolute;
     width: 216px;
-    top: -1px;
+    top: -2px;
     left: 137px;
     transform-origin: right;
     transform: rotate(-62deg);
@@ -31,13 +27,6 @@
     display: grid;
     grid-template-columns: 1fr   1fr  1fr;
     grid-gap: 100px;
-
-    @media (max-width: 950px) {
-      grid-template-columns: 1fr 1fr;
-    }
-    @media (max-width: 750px) {
-      grid-gap: 50px;
-    }
   }
 
   &__header-content { //Header content is child of grid
@@ -57,18 +46,28 @@
     }
   }
 
+  &__tooling {
+    grid-column: 1 / -1;
+    position: static;
+    h2 {
+      text-align: center;
+
+    }
+  }
+
   &__card { //Cards are children of grid.
     display: flex;
     flex-direction: column;
     align-items: center;
 
     p {
-      @include type (1.6, $lightAccent2, 400, 1.6, center, false  );
+      @include type (1.6, $white, 400, 1.6, center, false  );
       margin-top: 0;
     }
 
     .svg-inline--fa { //Font Awesome Icons
       font-size: 70px;
+      max-width: 70px;
       display: block;
       color: white;
     }
@@ -76,19 +75,86 @@
     img {
       display: block;
       height: 70px;
+      max-width: 70px;
     }
     transition: transform 0.3s;
-    @media (min-width: 600px) {
+    @media (min-width: 800px) {
       &.featured:hover {
         transform: scale(1.5);
+      }
+    }
+    @media (min-width: 600px) {
+      &.featured:hover {
+        transform: scale(1.3);
       }
     }
 
 
   }//end of skills card
 
+  @media (max-width: 1200px) {
+    padding: 75px;
+    &__grid {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 75px;
+    }
+    &::before {
+      left: 100px;
+    }
+  }
+  @media (max-width: 850px) {
+    margin-top: -75px;
+    &__grid {
+      grid-gap: 50px;
+    }
+    &__header-content { //Header content is child of grid
+      grid-column: 1 / -1;
+      h2 {
+        text-align: left;
+      }
+      left: 0px;
+    }
+    &::before {
+      left: -100px;
+    }
+  }
 
+  @media (max-width: 600px) {
+    margin-top: -50px;
+    padding: 50px;
 
+    &::before {
+      width: 100px;
+      left: -40px;
+    }
+    .featured {
+      grid-column: 1 / -1;
+      p {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  @media (max-width: 450px) {
+    padding: 25px;
+    width: 100%;
+    h4 {
+      font-size: 1.7rem;
+    }
+    .featured {
+      p {
+        font-size: 1.6rem;
+      }
+    }
+    &__grid {
+      grid-gap: 25px;
+    }
+    &::before {
+      content: none;
+      // width: 60px;
+      // left: -25px;
+    }
+  }
 
 
 

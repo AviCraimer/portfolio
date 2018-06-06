@@ -2,7 +2,7 @@
   position: relative;
   // height: 700px;
   padding: 1px;
-
+  // display: none;
 
   h3 {
     margin-bottom: 5px;
@@ -15,7 +15,7 @@
   h4 {
     margin-top: 0;
     a {
-      @include type (2, $accent2, 600, 1.2, left, true);
+      @include type (2, $neutral, 600, 1.2, left, true);
 
     }
   }
@@ -70,9 +70,12 @@
     &__screenshot {
       flex: 55 0 55px;
       margin-bottom: 100px;
+
+      display:  flex;
+      justify-content: center;
     }
   }
-}
+} //End of Portfolio
 
 
 .portfolio1 {
@@ -98,15 +101,8 @@
 
   .button2--last {
     margin-left: 0;
+    margin-right: 0;
   }
-
-
-  // .portfolio__project__content {
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: flex-end;
-
-  // }
 }
 .portfolio3 {
   // margin-bottom: 50px;
@@ -116,7 +112,101 @@
     &__skew-bottom {
       transform: skewY(-28deg);
     }
-
   }
 
+
+
 }
+
+
+//Media Queries
+.portfolio {
+  @media (max-width: 1200px) {
+    //Center the content
+    .wrapper-right, .wrapper-left {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__header {
+      margin-top: 25%;
+    }
+    .button2 {
+      margin-bottom: 10px;
+      margin-right: 20%;
+    }
+
+    &.portfolio2 {
+      .button2 {
+        margin-left: 16%;
+      }
+    }
+
+  }
+  @media (max-width: 850px) {
+    &__project {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+
+    .portfolio__project__screenshot {
+      display: block;
+      margin-bottom: 30px;
+    }
+
+    .button2 {
+      margin-right: 20px;
+    }
+    .button2--last {
+      margin-right: 0;
+    }
+    &.portfolio1 {
+      margin-top: -100px;
+    }
+    &.portfolio2 {
+      // background: red;
+      .portfolio__project {
+        flex-direction: column;
+      }
+
+      h3, h4, p, .button1 {
+        margin-left: 0;
+      }
+    }
+
+    &.portfolio2, &.portfolio3 {
+      .portfolio__project__screenshot {
+        padding: 0 20%;
+      }
+    }
+  }//End of 850px mediaQ
+
+  @media (max-width: 650px) {
+    h3 {
+      font-size: 3rem;
+    }
+    .portfolio__project {
+      p {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    &__header {
+      margin-top: 35%;
+    }
+    h3 {
+      font-size: 2.6rem;
+    }
+    h4 {
+      font-size: 1.8rem;
+    }
+    .button2 {
+      padding: 15px 20px;
+      font-size: 1.4rem;
+
+    }
+  }
+}//End of portfolio selector

@@ -24,6 +24,10 @@ h2 {
   position: relative;
   margin-top: 30px;
   margin-bottom: 30px;
+
+  @media (max-width: 600px) {
+    font-size: 3rem;
+  }
 }
 
 h3 { //Section Main Sub Headings
@@ -60,7 +64,7 @@ img {
 
 .wrapper-right {
   width: 85%;
-  float: right;
+  margin-left: auto;
 }
 
 .wrapper-left {
@@ -78,20 +82,85 @@ ul {
   display: inline-block;
   @include type (1.7, $black, 700, 1, center, true);
   background-color:  $accent1;
-  box-shadow: 0px 12px 40px 0px rgba(231, 255, 137, 0.4);
+  box-shadow: 0px 12px 40px 0px rgba(231, 255, 137, 0.4), 1px 1px 0px #131605;
   padding: 15px 30px;
   border-radius: 100px;
+  transition:
+    background-color 0.2s ease-in,
+    box-shadow 0.2s cubic-bezier(0.42, 0, 0.73, 1.15),
+    transform 0.2s cubic-bezier(0.42, 0, 0.73, 1.15);
   svg {
     margin-left: 15px;
+  }
+   &:hover {
+    transform: translate(-5px, -5px);
+    box-shadow:
+      0px 12px 40px 0px rgba(231, 255, 137, 0.4),
+      1px 1px 0px #131605,
+      2px 2px 0px #131605,
+      3px 3px 0px #131605,
+      4px 4px 0px #131605,
+      5px 5px 0px #131605,
+      ;
+  }
+  &:active {
+    background: #c4e931;
+    box-shadow:
+      0px 12px 40px 0px rgba(231, 255, 137, 0.4),
+      1px 1px 0px rgb(231, 255, 137);
+      transform: translate(-1px, -1px);
+
   }
 
 }
 
 .button2 {
   @extend .button1;
-  box-shadow: 0px 12px 40px 0px rgba(72, 196, 212, 0.3);
+  box-shadow: 0px 12px 40px 0px rgba(72, 196, 212, 0.3), 1px 1px 0px #131605;
   background-color: $accent2;
   color: $white;
+  &:hover {
+    box-shadow:
+      0px 12px 40px 0px rgba(72, 196, 212, 0.3),
+      1px 1px 0px #131605,
+      2px 2px 0px #131605,
+      3px 3px 0px #131605,
+      4px 4px 0px #131605,
+      5px 5px 0px #131605,
+      ;
+  }
+  &:active {
+    background: #318a96;
+    box-shadow: 0px 12px 40px 0px rgba(72, 196, 212, 0.3), 1px 1px 0px #131605;
+  }
+}
+
+.arrow-to-top {
+  display: none;
+  position: fixed;
+  opacity: 0.8;
+  z-index: 100;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: $white;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-out;
+  &:hover {
+    transform: translateX(-50%) scale(1.4);
+  }
+  .fa-arrow-circle-up {
+    color: $neutral;
+    font-size: 55px;
+    margin: -1px;
+  }
+  &.display {
+    //Display arrow only when mobile nav is not displayed
+    @media (min-width: 650px) {
+      display: block;
+    }
+  }
 }
 
 

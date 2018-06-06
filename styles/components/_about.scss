@@ -16,8 +16,6 @@
     // border: 2px solid red;
   }
 
-
-
   img {
 
     width: 50%;
@@ -49,5 +47,43 @@
       }
   }
 
+  @media (max-width: 1200px) {
+    &__skew {
+      width: 160%;
+    }
+
+    &__content {
+      padding: 5% 0 20% 0;
+    }
+  }
+  @media (max-width: 860px) {
+    background-image: none;
+    background-color: $neutralMedium;
+
+    h2 {
+     margin-bottom: 65px;
+    }
+
+    &__skew {
+      width: 160%;
+
+    }
+
+    &__content {
+      p {
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    &__skew {
+      width: 140%;
+    }
+  }
+  @media (max-width: 450px) {
+    &__skew {
+      width: 120%;
+    }
+  }
 
 }

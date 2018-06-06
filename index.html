@@ -12,10 +12,15 @@
 </head>
 
 <body>
-  <header>
+  <header id="top">
     <div class="wrapper">
       <nav class="main-nav">
         <h3 class="logo"><span class="a">A</span><span class="c">C</span></h2>
+        <div id="nav-icon" class="nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -33,6 +38,7 @@
     </div>
   </header>
   <main>
+    <a class="arrow-to-top" href="#top"><i class="fas fa-arrow-circle-up"></i></a>
     <section class="about" id="about">
       <div class="about__skew">
       </div>
@@ -40,33 +46,21 @@
           <div class="about__content">
             <h2 class="accent-line"  >About Me</h2>
             <p>As a coder I strive to bring together analyic thinking with holistic vision. As I learned JavaScript, I drew on my academic training in formal logic and conceptual analysis. In addition, my background in mindfulness meditation helps me to stay focused, relaxed and attentive as I code.</p>
-            <p>I am delighted to be a graduate from the HackerYou full-time Web Dev program, and I can't wait to share my skills and enthusiam as part of an inspiring development team.</p>
+            <p>I am delighted to be a graduate from the HackerYou full-time web dev program, and I can't wait to share my skills and enthusiam as part of an inspiring development team.</p>
 
           </div> <!-- End of About Content -->
       </div> <!-- End of Wrapper -->
-
-
-
-
-
-
     </section>
-    <section class="skills wrapper" >
-
+    <section id="skills" class="skills wrapper" >
       <ul class="skills__grid">
         <li class="skills__header-content">
-            <h2>Skills and Tooling</h2>
+            <h2>Dev Skills</h2>
             <p>I relish the challenge of continually adding the latest technologies to my development toolkit while also mastering programming fundamentals.</p>
         </li>
         <li class="skills__card featured ">
-          <i class="fab fa-html5"></i>
-          <h4>HTML</h4>
-          <p>Clean accessible and semantic markup. Using Emmet to build page structure rapidly.</p>
-        </li>
-        <li class="skills__card featured ">
-          <i class="fab fa-css3-alt"></i>
-          <h4>CSS</h4>
-          <p>Responsive web layout and styling with descriptive class names and minimal repetition.</p>
+          <i class="fab fa-react"></i>
+          <h4>React</h4>
+          <p>Authoring full-featured React web apps with Firebase for authentication and persistent data.</p>
         </li>
         <li class="skills__card featured ">
           <i class="fab fa-js"></i>
@@ -79,18 +73,23 @@
             <p>Going beyond plugins to craft unqiue interactive page elements and data rich websites</p>
           </li>
         <li class="skills__card featured ">
-          <i class="fab fa-react"></i>
-          <h4>React</h4>
-          <p>Authoring full-featured React web apps with Firebase for authentication and persistent data.</p>
-        </li>
-        <li class="skills__card featured ">
           <img src="assets/svg-icon.svg" alt="SVG Format Icon" aria-hidden="true" >
           <h4>SVG</h4>
           <p>Creating, optimizing, and manipulating SVG images for lightweight super-crisp backgrounds and fun interactive animations.</p>
         </li>
-        <!-- <li class="skills__header-content">
-            <h2>Tooling</h2>
-        </li> -->
+        <li class="skills__card featured ">
+          <i class="fab fa-html5"></i>
+          <h4>HTML</h4>
+          <p>Clean accessible and semantic markup. Using Emmet to build page structure rapidly.</p>
+        </li>
+        <li class="skills__card featured ">
+          <i class="fab fa-css3-alt"></i>
+          <h4>CSS</h4>
+          <p>Responsive web layout and styling with descriptive class names and minimal repetition.</p>
+        </li>
+        <li class="skills__header-content skills__tooling">
+            <h2>More Tools</h2>
+        </li>
         <li class="skills__card">
             <img src="assets/firebase.svg" alt="Firebase Icon" aria-hidden="true" >
           <h4>Firebase</h4>
@@ -113,19 +112,19 @@
           <h4>Gulp</h4>
         </li>
         <li class="skills__card">
-            <i class="fab fa-github-square"></i>
-          <h4>GitHub</h4>
+            <i class="fab fa-git-square"></i>
+          <h4>Git</h4>
         </li>
       </ul> <!-- End of skills__grid -->
     </section>
 
     <!-- Start of Portfolio Section and First Project -->
-    <section class="portfolio portfolio1 clearfix">
+    <section  class="portfolio portfolio1 clearfix">
       <div class="background">
         <div class="background__top"></div>
         <div class="background__skew-bottom"></div>
       </div>
-      <div class="wrapper-right portfolio__header">
+      <div id="portfolio"  class="wrapper-right portfolio__header" >
           <h2 class="accent-line">Portfolio</h2>
       </div>
       <div class="portfolio__project  wrapper-right">
@@ -195,7 +194,6 @@
       <h2>Coding Fun</h2>
       <div class="fun__content wrapper">
         <a href="https://codepen.io/AviC/"  target="_blank"  class="fun__card codePen">
-          <!-- <img src="assets/codepen.svg" alt="CodePen Icon"> -->
           <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"  style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
             <rect id="Artboard1" x="0" y="0" width="100" height="100" style="fill:none;"/>
             <clipPath id="_clip1">
@@ -228,9 +226,9 @@
         </a>
       </div>
     </aside>
-    <section class="contact wrapper">
-      <h2 class="accent-line">Contact</h2>
-      <p>I would love to hear from you. Email me directly at hello@avicodes.com or use the contact form below.</p>
+    <section  class="contact wrapper">
+      <h2 id="contact" class="accent-line">Contact</h2>
+      <p>I would love to hear from you. Email me directly at <a href="mailto:hello@avicodes.com">hello@avicodes.com</a> or use the contact form below.</p>
       <form action="http://www.focuspocus.io/magic/c468998d09747e09215df53ecaa3a560" method="POST">
         <input type="text" placeholder="Your Name" name="senderName" >
         <input type="email" placeholder="Email" name="Email" >
@@ -240,34 +238,27 @@
     </section>
 
   </main>
-  <footer>
+  <footer class="footer">
     <div class="footer__top">
-      <div class="footer__top__skew"></div>
-    </div>
-    <div class="footer__middle">
-      <div class="footer__middle__skew"></div>
-    </div>
-    <div class="footer__bottom">
-
-    </div>
-
-
-    <div class="footer__background">
-          <div class="footer__background__top">
-            <address>
-              <p>Phone: 416-825-7496</p>
-              <p>Email: hello@avicodes.com</p>
-              <p>Website: www.avicodes.com</p>
-              <p>Toronto</p>
-            </address>
-
-          </div>
-          <div class="footer__background__middle"></div>
-          <d class="footer__background__bottom"></div>
+      <div class="footer__background">
+        <div class="footer__background__skew"></div>
+        <div class="footer__background__flat"></div>
       </div>
-
+      <div class="footer__content">
+        <address>
+            <h4>&copy; 2018 Avi Craimer</h4>
+            <p><a href="mailto:hello@avicodes.com">hello@avicodes.com</a></p>
+            <p>Toronto</p>
+            <p><a href="https://github.com/AviCraimer/portfolio" target="_blank">Site source <em>here</em>.</a></p>
+        </address>
+        <ul class="footer__social">
+            <li title="Twitter"><a href="https://twitter.com/avicodes" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li title="LinkedIn"><a href="www.linkedin.com/in/avicodes" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li title="GitHub"><a href="https://github.com/AviCraimer" target="_blank"><i class="fab fa-github"></i></a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
-
 
   <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
   <script src='scripts/anime.min.js' ></script>

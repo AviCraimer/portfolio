@@ -11,6 +11,14 @@
     margin-top: 0;
   }
 
+  p a {
+    color: $neutral;
+    font-family: $bodyFont;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   form {
 
     display: flex;
@@ -25,14 +33,15 @@
     flex: 1 1 40%;
     @include type(1.6, #838282, 400, 1.6, left, false );
     border: none;
-    border-bottom: 1px solid #b9b9b9;
+    border-bottom: 1px solid $neutral;
     margin-bottom: 30px;
     padding: 10px;
   }
 
   textarea {
     flex: 1 1 100%;
-    border: 1px solid #b9b9b9;
+    border: 1px solid $neutral;
+    resize: none;
   }
 
   input[type=submit] {
@@ -40,4 +49,24 @@
     margin: 0 auto;
   }
 
+
+
+  @media (max-width: 800px) {
+    padding: 50px;
+  }
+
+  @media (max-width: 650px) {
+    form {
+      flex-direction: column;
+    }
+
+    input[type=text] {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
+    padding: 25px;
+  }
 }
